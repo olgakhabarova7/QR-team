@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Состав команды</title>
+    <style>
+        :root {
+            --bg: #f5f7fb;
+            --card-bg: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 24px 16px 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .team {
+            display: grid;
+            gap: 16px;
+        }
+
+        .member {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .member-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .member-section {
+            margin-bottom: 10px;
+        }
+
+        .member-section-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 4px;
+        }
+
+        .member-section-content {
+            font-size: 14px;
+        }
+
+        .member-section-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .member-section-content a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+
+        .contact-item {
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px 12px 32px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .member {
+                padding: 14px;
+            }
+
+            .member-name {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Состав команды</h1>
+
+        <div class="team">
+
+            <!-- Участник 1 -->
+            <div class="member">
+                <div class="member-name">Полусмак Илья Валерьевич</div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Роль в команде</div>
+                    <div class="member-section-content">
+                        Разработка ЭЭГ-ветки и интеграция. Разработка ЭЭГ-признаков и классификатора, ядра онлайн-модели, стенда честной валидации и итоговая сборка решения.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Образование</div>
+                    <div class="member-section-content">
+                        6 курс, специальность «Медицинская кибернетика», РНИМУ им. Н. И. Пирогова.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Контакты</div>
+                    <div class="member-section-content">
+                        <div class="contact-list">
+                            <div class="contact-item">Тел: <a href="tel:+79689976938">+7 968 997‑69‑38</a></div>
+                            <div class="contact-item">Email: <a href="mailto:polusmak22@gmail.com">polusmak22@gmail.com</a></div>
+                            <div class="contact-item">Telegram: <a href="https://t.me/Lyssten">@Lyssten</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Участник 2 -->
+            <div class="member">
+                <div class="member-name">Коршунов Евгений Сергеевич</div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Роль в команде</div>
+                    <div class="member-section-content">
+                        Разработка NIRS/БИКС-ветки. Причинная предобработка HbO, построение NIRS-baseline, выделение признаков и отдельная NIRS-классификация.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Образование</div>
+                    <div class="member-section-content">
+                        5 курс, специальность «Медицинская кибернетика», РНИМУ им. Н. И. Пирогова.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Контакты</div>
+                    <div class="member-section-content">
+                        <div class="contact-list">
+                            <div class="contact-item">Тел: <a href="tel:+79196909333">+7 919 690‑93‑33</a></div>
+                            <div class="contact-item">Email: <a href="mailto:evgenysk72@gmail.com">evgenysk72@gmail.com</a></div>
+                            <div class="contact-item">VK: <a href="https://vk.ru/1member1" target="_blank" rel="noopener">vk.ru/1member1</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Участник 3 -->
+            <div class="member">
+                <div class="member-name">Пономарев Матвей Борисович</div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Роль в команде</div>
+                    <div class="member-section-content">
+                        Инфраструктура и воспроизводимость. Подготовка программного окружения, проверка времени работы решения на целевом железе судьи, контроль запуска и воспроизводимости результатов.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Образование</div>
+                    <div class="member-section-content">
+                        4 курс, ВМК МГУ.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Контакты</div>
+                    <div class="member-section-content">
+                        <div class="contact-list">
+                            <div class="contact-item">Тел: <a href="tel:+79883355581">+7 988 335‑55‑81</a></div>
+                            <div class="contact-item">Email: <a href="mailto:matwey46@yandex.ru">matwey46@yandex.ru</a></div>
+                            <div class="contact-item">VK: ponomattik</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Участник 4 -->
+            <div class="member">
+                <div class="member-name">Панфилова Арина Павловна</div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Роль в команде</div>
+                    <div class="member-section-content">
+                        ML-методология. Разработка статистического классификатора, контроль утечек данных и переобучения, валидация экспериментов и методологическое ревью ML-подходов.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Образование</div>
+                    <div class="member-section-content">
+                        3 курс, ВМК МГУ.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Контакты</div>
+                    <div class="member-section-content">
+                        <div class="contact-list">
+                            <div class="contact-item">Тел: <a href="tel:+79169937248">+7 916 993‑72‑48</a></div>
+                            <div class="contact-item">Email: <a href="mailto:arisha.panfilova@gmail.com">arisha.panfilova@gmail.com</a></div>
+                            <div class="contact-item">VK: <a href="https://m.vk.ru/fairiefaiza" target="_blank" rel="noopener">m.vk.ru/fairiefaiza</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Участник 5 -->
+            <div class="member">
+                <div class="member-name">Хабарова Ольга Олеговна</div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Роль в команде</div>
+                    <div class="member-section-content">
+                        Нейрофизиология и научная коммуникация. Физиологическое обоснование признаков, интерпретация ЭЭГ- и NIRS-графиков, подготовка научной части отчёта и презентации.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Образование</div>
+                    <div class="member-section-content">
+                        4 курс, ФЕН НГУ.
+                    </div>
+                </div>
+
+                <div class="member-section">
+                    <div class="member-section-title">Контакты</div>
+                    <div class="member-section-content">
+                        <div class="contact-list">
+                            <div class="contact-item">Тел: <a href="tel:+79134229565">+7 913 422‑95‑65</a></div>
+                            <div class="contact-item">Email: <a href="mailto:o.khabarova@g.nsu.ru">o.khabarova@g.nsu.ru</a></div>
+                            <div class="contact-item">VK: <a href="https://vk.ru/soulpoet007" target="_blank" rel="noopener">vk.ru/soulpoet007</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
